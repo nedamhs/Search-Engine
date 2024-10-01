@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+    <style>
+        /* Centering the content vertically and horizontally */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            font-family: Arial, sans-serif;
+            background-attachment: fixed;  /* Keep the background fixed to the viewport */
+
+            background-image: url('static/images/aldrichpark.jpg');
+            background-size: cover;  /* Ensures the image covers the entire page */
+            background-position: center;  /* Centers the image */
+            background-repeat: no-repeat;  /* Prevents image repetition */
+        }
+
+        /* Search form styling */
+        .search-container {
+    width: 100%;  /* Ensure it spans the full width */
+    max-width: none;  /* Disable any max-width restrictions */
+    text-align: center;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+        input[type="text"] {
+            width: 400px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <h1>ICS Search Engine</h1>
+        <form action="/search" method="POST">
+            <input type="text" name="query" placeholder="Enter your query">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
